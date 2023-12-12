@@ -1,3 +1,41 @@
+
 .hero {
-    margin-top: 15vh;
+    margin-top: 22vh;
+    position: relative;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        height: 70vh;
+        object-fit: cover;
+    }
+    
+    h4 {
+        position: absolute;
+        top: 230px;
+        z-index: 2;
+        color:#fff;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    h1 {
+        position: absolute;
+        top: 280px;
+        margin-top: 5px;
+        z-index: 2;
+        color:#fff;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+    }
+}
+.hero:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.184);
+    z-index: 1;
 }

@@ -1,0 +1,132 @@
+.explore {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:30px;
+}
+.grid-container-explore {
+    margin-top: 50px;
+    display: grid;
+    width: 90vw;
+    grid-template-columns: repeat(4,1fr);
+
+    img {
+        height: 400px;
+        width: 300px;
+        max-width: 100%;
+        object-fit:cover;
+        transition: 1s all ease;
+        
+    }
+
+}
+.grid-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+        transition: 1s all ease;
+        &:hover [alt="img-move"] {
+            transform: scale(1.1); 
+            transition: 1s all ease;
+        }
+
+    h4 {
+       justify-content: left;
+    }
+    
+}
+.img-border {
+    overflow: hidden;
+    border-radius: 5px;
+}
+.family {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 6.5vw;
+}
+.family-box {
+    margin-right: 10vw;
+    width: 390px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    p {
+        color: gray;
+        line-height: 1.6;
+    }
+}
+
+.collection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.collections {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+}
+.collections-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    
+    img {
+        transition: 1s all ease;
+    }
+        transition: 1s all ease;
+        &:hover [alt="img-move"] {
+            transform: scale(1.1); 
+            transition: 1s all ease;
+        }
+
+    h3 {
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+    p {
+        color: gray;
+        width: 450px;
+        line-height: 1.6;
+    }
+}
+
+.collections-link {
+    a {
+        padding: 10px;
+    }
+}
+
+.on-the-grape {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.grape-boxes {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.grape-box {
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+
+    img {
+        height: 266px;
+        object-fit: cover;
+    }
+    
+}
