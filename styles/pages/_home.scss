@@ -8,7 +8,7 @@
 .grid-container-explore {
     margin-top: 50px;
     display: grid;
-    width: 90vw;
+    width: 80vw;
     grid-template-columns: repeat(4,1fr);
 
     img {
@@ -47,6 +47,8 @@
     display: flex;
     justify-content: space-between;
     margin: 80px 6.5vw;
+    width:75vw;
+    margin: 0 auto;
 }
 .family-box {
     margin-right: 10vw;
@@ -72,7 +74,7 @@
 .collections {
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 40px;
+    width:80vw;
 }
 .collections-img {
     display: flex;
@@ -108,25 +110,55 @@
 }
 
 .on-the-grape {
-    margin-top: 120px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width:80vw;
+    margin: 0 auto;
+    margin-top: 120px;
+    h2 {
+        margin-bottom: 55px;
+    }
+    button {
+        margin: 30px;
+    }
 }
 .grape-boxes {
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    gap: 80px;
 }
 .grape-box {
     display: flex;
     flex-direction: column;
-    
-    align-items: center;
+    cursor: pointer;
+    &:hover [alt="img-move"] {
+        transform: scale(1.1); 
+        transition: 1s all ease;
+    }
 
     img {
-        height: 266px;
+        max-width: 100%;
         object-fit: cover;
+        transition: 1s all ease;
+        
+    }
+    h3 {
+        width:390px;
+        font-size: 22px;
+        letter-spacing: 1px;
+        line-height: 1.4;
+    }
+    p {
+        width:390px;
     }
     
+}
+.pre-footer-line {
+    width: 100vw;
+    height:2px;
+    background-color: #E5E5E5;
+    margin-top : 50px;
+
 }

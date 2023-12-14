@@ -13,6 +13,21 @@
 </head>
 
 <body class="bottles">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/styles.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/0144f75b4e.js" crossorigin="anonymous"></script>
+        <title>index</title>
+    </head>
+    
+    <body class="bottles">
     <header>
         <div class="nav-container">
             <nav class="nav-gray">
@@ -21,24 +36,36 @@
             </nav>
             <nav class="nav-logo">
                 <a href="">
-                        <input type="text" placeholder="Search..">
+                    <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
+                    <input class="search-nav" type="text" placeholder="Search..">
                 </a>
                 <a href="">
-                    <img class="logo" src="" alt="">
+                    <img class="logo" src="img/wv_whitehall_logo_eb4332e2-6e50-4d86-9729-515e1ac2d0e0_300x.png" alt="">
                 </a>
-                <a class="nav-icon" href=""></a>
-                <a class="nav-icon" href=""></a>    
-                <a class="nav-icon" href=""></a>
+                <div class="nav-logo-links">
+                    <a class="nav-icon" href=""><i class="fa-regular fa-user" style="color: #000000;"></i></a>
+                    <a class="nav-icon" href=""><i class="fa-regular fa-heart" style="color: #000000;"></i></a>
+                    <a class="nav-icon" href=""><i class="fa-brands fa-shopify" style="color: #000000;"></i></a>
+                </div>
             </nav>
-            <div class="gray-line"></div>
+            <div class="gray-line_2"></div>
             <nav class="nav-link">
                 <a href="">ONLINE SHOP</a>
                 <a href="">WHITEHALL VINEYARD</a>
                 <a href="">STOCKISTS</a>
                 <a href="">NEWS</a>
             </nav>
+            <div class="gray-line"></div>
         </div>
     
+        <div class="hero">
+            <img src="img/hero-vines_1920x700_crop_center.jpg" alt="">
+            <h4>award winning wine from wiltshire</h4>
+            <!-- <div class="sur-titre"> award winning wine from wiltshire</div> -->
+            <h1>whitehall vineyard</h1>
+    
+        </div>
+    </header>
         <div class="hero-bottles">
 
             <h2>SINGLE BOTTLES</h2>
@@ -285,9 +312,10 @@
             </div>
         </div>
     </section>
+    <div class="pre-footer-line"></div>
     <footer>
         <div class="footer-box">
-            <img src="" alt="">
+            <img width="210" data-lazy-load="" src="//whitehallvineyard.co.uk/cdn/shop/files/logog_250x.jpg?v=1656424637" data-src="//whitehallvineyard.co.uk/cdn/shop/files/logog_250x.jpg?v=1656424637" data-srcset="//whitehallvineyard.co.uk/cdn/shop/files/logog_250x.jpg?v=1656424637 1x, //whitehallvineyard.co.uk/cdn/shop/files/logog_500x.jpg?v=1656424637 2x" alt="Whitehall Vineyard" class="loaded" srcset="//whitehallvineyard.co.uk/cdn/shop/files/logog_250x.jpg?v=1656424637 1x, //whitehallvineyard.co.uk/cdn/shop/files/logog_500x.jpg?v=1656424637 2x" data-was-processed="true">
         </div>
         <div class="footer-box">
             <h5>ABOUT</h5>
@@ -299,8 +327,7 @@
             <a href="">Drink Responsibly</a>
         </div>
         <div class="footer-box">
-            <h5></h5>
-            <a href="">CUSTOMER</a>
+            <h5>CUSTOMER</h5>
             <a href="">Delivery & Returns</a>
             <a href="">Contact Us</a>
             <a href="">FAQ’s</a>
@@ -312,21 +339,25 @@
             <a href="">Payments</a>
         </div>
         <div class="footer-box">
-            <h4>NEWSLETTER SIGN UP</h4>
+            <h3>NEWSLETTER SIGN UP</h3>
             <p>Please sign up to our newsletter to keep up to date with the latest products, offers and personalised recommendations for you.</p>
             <form action="">
-                <input type="email" name="" id="">
-                <input type="submit" value="">
+                <input class="footer-form" type="text" placeholder="Enter email address">
+                <input class="footer-form-2" type="submit" value="sign up">
             </form>
             <div class="social-link">
-    
+                <a href=""><i class="fa-brands fa-facebook-f" style="color: #000000;"></i></a>
+                <a href=""><i class="fa-brands fa-instagram" style="color: #000000;"></i></a>
+                <a href=""><i class="fa-brands fa-twitter" style="color: #000000;"></i></a>
             </div>  
         </div>
+    
     </footer>
     <div class="subfooter">
         2023 Whitehall vineyard. Designed by blubolt
     </div>
-    <script defer src="scripts/main.js"></script>
-</body>
-
-</html>
+    
+        <script defer src="scripts/main.js"></script>
+    </body>
+    
+    </html>
