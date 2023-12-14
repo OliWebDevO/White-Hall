@@ -40,3 +40,40 @@
     background: rgba(0, 0, 0, 0.184);
     z-index: 1;
 }
+
+
+// bottles page
+
+.hero-bottles {
+    margin-top: 23vh;
+    position: relative;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fffbfb;
+    a {
+        position: absolute;
+        color: gray;
+        font-size: 12px;
+        top: 100px;
+        left: 220px;
+        z-index: 2;
+    }
+    img {
+        position: absolute;
+        z-index: 2;
+        left: 1080px;
+        top: 45px;
+    }
+    h2 {
+        margin-bottom: 10px;
+    }
+    p {
+        margin-top: 0;
+        width: 50vw;
+        text-align: center;
+        line-height: 1.5;
+    }
+}

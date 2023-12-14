@@ -1,0 +1,67 @@
+
+.gray-line-bottles {
+    height: 2px;
+    background-color: #E5E5E5;
+}
+.onglets-bottles {
+    width: 70vw;
+    height: 8vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.onglet-button {
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 1px solid #E5E5E5;
+}
+
+.wine-catalogue {
+    width: 70vw;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+    cursor: pointer;
+}
+
+.grid-container-wine-catalogue:nth-of-type(5) {
+    grid-column: 1 / 3;
+    grid-row: 2 / 4;
+    cursor: pointer;
+    &:hover [alt="img-move"] {
+        transform: scale(1.1); 
+        transition: 1s all ease;
+    }
+    img {
+        transition: 1s all ease;
+    }
+}
+.grid-container-wine-catalogue {
+    &:hover .quick-view {
+        opacity: 1;
+        @include transition
+    }
+    &:hover 
+
+}
+
+.img-catalogue {
+    position: relative;
+
+    .heart {
+        position: absolute;
+    }
+
+    .quick-view {
+        position: absolute;
+        top: 250px;
+        left:62px;
+        opacity: 0;
+        @include transition
+    }
+}

@@ -45,10 +45,10 @@
 }
 .family {
     display: flex;
-    justify-content: space-between;
-    margin: 80px 6.5vw;
+    justify-content: space-between;  
     width:75vw;
     margin: 0 auto;
+    margin-top: 100px;
 }
 .family-box {
     margin-right: 10vw;
@@ -69,6 +69,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 100px;
     
 }
 .collections {
@@ -156,9 +157,8 @@
     
 }
 .pre-footer-line {
-    width: 100vw;
     height:2px;
     background-color: #E5E5E5;
     margin-top : 50px;
-
 }
+
