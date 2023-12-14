@@ -22,7 +22,8 @@
 .wine-catalogue {
     width: 70vw;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 80px;
+    margin-bottom: 80px;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 30px;
@@ -39,6 +40,7 @@
     }
     img {
         transition: 1s all ease;
+        border-radius: 8px;
     }
 }
 .grid-container-wine-catalogue {
@@ -55,13 +57,127 @@
 
     .heart {
         position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 3;
+
     }
 
     .quick-view {
         position: absolute;
-        top: 250px;
-        left:62px;
+        z-index: 3;
+        top: 170px;
+        left:25px;
         opacity: 0;
-        @include transition
+
+        @include transition;
+    }
+    &:hover [alt="bg-img"] {
+        opacity: 1;
+        @include transition;
+    }
+    .bg-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        opacity: 0;
+        @include transition;
+        border-radius: 5px;
+    }
+   
+}
+
+.img-catalogue-big {
+    position: relative;
+    h2 {
+        position: absolute;
+        z-index: 2;
+        bottom:80px;
+        left: 20px;
+        color: white;
+    }
+    button {
+        position: absolute;
+        z-index: 2;
+        bottom: 30px;
+        left: 20px;
+        background-color: #E5E5E5;
+        color: black;
+    }
+}
+
+.award {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fffbfb;
+  
+    p {
+        margin-top: 0;
+        width: 65vw;
+        text-align: center;
+        line-height: 1.5;
+    }
+}
+.exploring {
+    width: 90vw;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+.exploring-container {
+    display: flex;
+    height: 70vh;
+    img {
+        width: 55vw;
+    }
+    .exploring-box {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        background-color: #96958a;
+        width: 35vw;
+        img {
+            position: absolute;
+            z-index: 2;
+            top: 10px;
+            right: 10px;
+            height: 100px;
+            width: 100px;
+            
+        }
+        h3 {
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        p {
+            padding: 0 40px;
+            line-height: 1.5;
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+        button {
+            border: 1px solid white;
+            margin-bottom: 10px;
+        }
+        button:nth-of-type(2) {
+            padding: 20px 78px;
+        }
+        button:nth-of-type(3) {
+            padding: 20px 65px;
+        }
+        button:nth-of-type(4) {
+            padding: 20px 105px;
+        }
     }
 }
