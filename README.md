@@ -24,3 +24,40 @@
    `<meter id="fuel" min="0" max="100" low="33" high="66" optimum="80" value="50">at 50/100</meter>`
 
    Cet exemple montre une barre de progression à moitié remplie (50/100). De plus la barre est de couleur jaune puisque la valeur optimum (80) est relativement éloignée de la valeur définie (50).
+
+**Compatibilité Web ** : 
+
+   L'élément HTML `<meter>` est compatible avec tous les navigateurs web sauf WebView d'Android.
+
+
+   
+
+### `<progress>` :
+
+**Définition** : Tout comme l'élément HTML `<meter>`, l'élément HTML `<progress>` permet de créer un rendu visuel à partir de données chiffrées, et ce sous forme d'une barre de progression. Cependant les données nécéssaires soint moindres, ce qui rend sa réalisation plus simple, mais également moins complète.
+
+**Attributs de l'élément `<progress>`** :
+ 
+ - Max : Cet attribut représente la valeur maximale que peut prendre la mesure.
+ 
+ - Value : Cette attribut représente la valeur actuelle de la mesure. Cet attribut est obligatoire.
+
+   Il est important de placer un élément HTML `<label>` devant `<progress>` afin de donner une description à la barre de progression.
+
+   Exemple : `<label for="file">File progress:</label>`
+
+   Cette exemple de `<label>` permet de donner l'indication : "File progress:" devant la barre de progression créer par `<progress>`.
+
+**Exemple approfondi** : 
+
+   Code : `<label for="file">File progress:</label>`
+
+   `<<progress id="file" max="100" value="70">70%</progress>`
+
+   Cet exemple montre une barre de progression remplie à 70%.
+
+
+**Compatibilité Web ** : 
+
+   L'élément HTML `<progress>` est compatible avec tous les navigateurs web existants.
+
