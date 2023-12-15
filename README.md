@@ -23,7 +23,9 @@
 
    `<meter id="fuel" min="0" max="100" low="33" high="66" optimum="80" value="50">at 50/100</meter>`
 
-   Cet exemple montre une barre de progression à moitié remplie (50/100). De plus la barre est de couleur jaune puisque la valeur optimum (80) est relativement éloignée de la valeur définie (50).
+   [exemple] [http://cepegra-labs.be/webdesign/fed2023/oliver/03_html-css/02_Tests&Exercices/29_Exemple_De_Meter/index]
+
+   Cet exemple montre une barre de progression à moitié remplie (50/100). De plus la barre est de couleur jaune puisque la valeur définie (50) est plus petite que l'attribut high (66); si la valeur est définie sur un nombre plus petit que l'attribut low, la barre est rouge.
 
 **Compatibilité Web ** : 
 
@@ -53,6 +55,8 @@
    Code : `<label for="file">File progress:</label>`
 
    `<<progress id="file" max="100" value="70">70%</progress>`
+
+   [exemple] [http://cepegra-labs.be/webdesign/fed2023/oliver/03_html-css/02_Tests&Exercices/29_Exemple_De_Progress/index]
 
    Cet exemple montre une barre de progression remplie à 70%.
 
