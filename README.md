@@ -11,7 +11,7 @@
  - Optimum : Cet attribut représente la valeur idéale pour la mesure. Si la valeur de optimum est inférieure à low, cela signifie que les valeurs les plus petites sont meilleures; si sa valeur est supérieure à high, cela signifie que les valeurs les plus grandes sont meilleures; enfin, s'il est compris entre low et high, cela signifie que les extrêmes ne sont pas les meilleures grandeurs.
  - Value : Cette attribut représente la valeur actuelle de la mesure. Cet attribut est obligatoire.
 
-   Il est important de placer un élément HTML `<label>` devant `<meter>` afin de donner une description relative à la barre de progression.
+   Il est important de placer un élément HTML `<label>` devant `<meter>` afin de donner une description à la barre de progression.
 
    Exemple : `<label for="fuel">Fuel level:</label>`
 
